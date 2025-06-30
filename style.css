@@ -1,0 +1,299 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+.home_container{
+  height: 100vh;
+}
+
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;  /* max-width isn't needed here */
+  height: 70px;
+  padding: 0px 30px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.6); 
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.nav_logo {
+  height: 60px;
+  width: 180px;
+  background-image: url('-removebg.png');
+  background-size: cover;
+}
+
+.nav_logo_hide {
+  height: 90px;
+  width: 60px;
+  background-image: url('ChatGPT Image Jun 28, 2025, 12_29_22 PM.png');
+  background-size: cover;
+  display: none;
+}
+
+
+.navbar_items ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_items ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.navbar_items ul li a:hover {
+  color: #fdc911;
+}
+
+
+
+.carousel-inner::after {
+  content: "     ";
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(to bottom left, rgba(241, 55, 55, 0.4), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-caption {
+  position: absolute;
+  z-index: 2;
+  margin-bottom: 300px;
+  text-align: left;
+}
+
+.carousel-caption h2 {
+  font-size: 80px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 6rem;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    width: 100%;
+}
+
+
+
+.course_container{
+  padding: 10px 10px;
+}
+
+
+.course_title h1{
+  font-size: 80px;
+  text-align: center;
+}
+
+.course_items{
+margin: 50px 100px;
+}
+
+
+.course_card{
+  width: 350px;
+  height: 300px;
+  box-shadow: 2px 3px 8px 0px  #0000009e;    
+  overflow: hidden;
+  display: inline-block;
+  margin: 20px 20px;
+  cursor: pointer;
+      transition: transform 0.6 ease-in; 
+	transform: matrix(1,0,0,1,1,0,0); 
+}
+
+.course_card:hover{
+  transform: matrix(1,0,0,1,0,-18); 
+  background-color: blanchedalmond; 
+}
+
+.course_card h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+
+
+.course_card p{
+  font-size: 18px;
+  color: rgb(124, 121, 121);
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+
+
+
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('pexels-thisisengineering-3862153.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.contact_text{
+    width: 100%;
+    height: 450px;
+    margin-left: 150px;
+    padding: 0px 20px;
+}
+.message2{
+    display: inline-block;
+    margin: 195px 10px;
+    width: 460px;
+    height: 400px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 2px 3px 8px 0px  #0000009e;
+    
+
+}
+
+.contact_title h1{
+  padding-top: 22px;
+  font-size: 70px;
+  text-align: center;
+}
+.contact_title h2{
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 5px;
+    
+}
+
+
+.message1{
+    display: inline-block;
+    margin: 160px 10px;
+    width: 660px;
+    height: 400px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 2px 3px 8px 0px  #0000009e;
+
+}
+.contact_grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.grid_item {
+  flex: 1;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 3px;
+
+}
+
+.grid_item i {
+  color: black;
+  font-weight: 300;
+  margin-bottom: 8px;
+  margin-right: 12px;
+}
+
+.grid_item p{
+  overflow: hidden;
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}
+.form_items{
+    margin: 5px;
+}
+
+.head_form{
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form{
+  padding:0 10px ;
+}
+.form_label{
+  font-size: 14px;
+}
+.form input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+    background-color:#dee7e4;
+}
+.form textarea{
+  width: 100%;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color:#dee7e4;
+}
+
+.contact_btn{
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: gray;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+
+@keyframes contact{
+   	0%{transform: scale(1);}            
+	100%{transform: scale(1.1);}
+}
+
+.contact_btn:hover{
+    cursor: pointer;
+    animation: contact 0.5s alternate infinite ease-in-out 
+}
+ */

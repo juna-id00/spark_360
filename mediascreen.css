@@ -1,0 +1,21 @@
+@media screen and (max-width:768px) {
+    .nav_logo{
+        display: none;
+    }
+    .nav_logo_hide{
+        display: block !important;
+        /* margin-bottom: 15px !important; */
+        
+    }
+
+    
+}
+
+
+@media screen and (max-width:877px) {
+
+    .carousel-caption {
+        margin-bottom: 140px !important;   
+    }
+
+}
